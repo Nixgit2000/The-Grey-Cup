@@ -1,0 +1,253 @@
+body {
+    overflow: hidden;
+    caret-color: transparent;
+    user-select: none;
+    background-color: black;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@font-face { font-family: FB; src: url('./Fonts/FootballFont.ttf'); } 
+@font-face { font-family: FB2; src: url('./Fonts/FB2.ttf'); } 
+@font-face { font-family: SB; src: url('./Fonts/scoreboard.ttf'); } 
+@font-face { font-family: D; src: url('./Fonts/DigitalFont.ttf'); } 
+
+#logo {
+    overflow: hidden;
+    margin: 1vh;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+    height: 20vh;
+
+    font-family: FB;
+}
+#football {
+    font-size: 5vh;
+    position: absolute;
+    top: 41vh;
+    left: 50vw;
+    z-index: 1000000;
+    transform: rotate(45deg);
+}
+#logocontainer {
+
+    overflow: hidden;
+    margin: 1vh;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+    height: 20vh;
+    width: 50vw;
+    position: absolute;
+    left: 24.5vw;
+    font-family: FB;
+}
+#fieldbox {
+    display: inline-block;
+    position: absolute;
+    top: 35vh;
+    left: 1vw;
+}
+#field {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    width: 98vw;
+    height: 12vh;
+    margin-bottom: 1vh;
+}
+
+#EndZoneHome {
+    font-size: 2vw;
+    color: yellow;
+    font-family: FB2;
+    color: white;
+    grid-column: 1;
+    background-color: rgb(0, 0, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#EndZoneHomeText {
+    transform: rotate(270deg);
+
+}
+#FieldDivider1 {
+    grid-column: 2;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#FieldDivider2 {
+    grid-column: 3;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#EndZoneAway {  
+    font-size: 2vw;
+    color: yellow;
+    font-family: FB2;
+    color: white;
+    grid-column: 13;
+    background-color: rgb(61, 11, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#EndZoneAwayText {
+    transform: rotate(90deg);
+
+}
+#text {
+    color: white;
+
+}
+
+
+#text {
+    color: white;
+    
+}
+
+
+#table {
+    table-layout: fixed;
+    width: 100%;   
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 18vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+#row {
+    font-family: D;
+    height: 7vh;
+    background-color: black;
+    color: yellow;
+
+}
+
+#col {
+    width: 10vw;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+#spacer {
+    height: 1vh;
+}
+#scoreHomeWord {
+    font-size: 6vh;
+    color: yellow;
+    font-family: SB;
+    width: 25vw;
+    height: 12vh;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10000;
+    top: 3.5vh;
+    left: 3vw;
+}
+#scoreHome {
+    font-size: 6vh;
+    color: yellow;
+    font-family: SB;
+    width: 25vw;
+    height: 8vh;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10000;
+    top: 10.5vh;
+    left: 3vw;
+}
+
+#scoreAwayWord {
+    font-size: 6vh;
+    color: yellow;
+    font-family: SB;
+    width: 25vw;
+    height: 12vh;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10000;
+    top: 3.5vh;
+    left: 72vw;
+}
+#scoreAway {
+    font-size: 6vh;
+    color: yellow;
+    font-family: SB;
+    width: 25vw;
+    height: 8vh;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10000;
+    top: 10.5vh;
+    left: 72vw;
+}
+
+#offense {
+    margin-top: 1vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);   
+    gap: 1vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+[id*="cards"] {
+    color: white;
+    height: 28vh;
+    background-color: black;
+
+}
+
+
+#table1 {
+    font-family: monospace;
+    position: absolute;
+    top: 53vh;
+    font-size: 1.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#row1 {
+    font-weight: bold;
+    font-family: monospace;
+    height: 2.4vh;
+    height: 1vh;
+
+}
+
+#col1 {
+    width: 10vw;
+    background-color: white;
+    color: black;
+}
+
+
+
